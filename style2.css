@@ -8,6 +8,7 @@
   --primary-color: #4891ff;
   --light-color: #f4f4f6;
   --dark-color: #111;
+  --black-color: #000;
 }
 
 body {
@@ -32,15 +33,15 @@ img {
 }
 
 /* Navbar */
+.navbar {
+  padding: 20px;
+  background: #fff;
+}
+
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.navbar {
-  background: #fff;
-  padding: 20px;
 }
 
 .navbar .main-menu ul {
@@ -54,16 +55,51 @@ img {
   transition: 0.5s;
 }
 
-.navbar ul li a:hover {
-  color: var(--primary-color);
-}
-
 .navbar ul li a i {
   margin-right: 10px;
 }
 
 .navbar ul li:last-child a {
   margin-left: 10px;
+}
+
+.navbar ul li a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero */
+.hero {
+  margin-bottom: 20px;
+}
+
+.hero .container {
+  background: url('img/hero-bg.png') no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 550px;
+}
+
+.hero .hero-content {
+  width: 70%;
+}
+
+.hero .hero-text {
+  width: 55%;
+  margin-bottom: 20px;
+}
+
+.video .video-preview {
+  margin-bottom: 20px;
+}
+
+.video {
+  padding: 10px 0 40px;
+}
+
+.video .video-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Utility */
@@ -76,18 +112,18 @@ img {
 .container-sm {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 60px;
 }
 
-/* Button */
+/* Buttons */
 .btn {
   background: var(--light-color);
   padding: 13px 20px;
   display: inline-block;
-  border: none;
-  border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -103,5 +139,71 @@ img {
 
 .btn-dark {
   background: var(--dark-color);
+  color: #fff;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Text Classes */
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Backgrounds */
+.primary-bg {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.light-bg {
+  background: var(--light-color);
+  color: #333;
+}
+
+.dark-bg {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.black-bg {
+  background: var(--black-color);
   color: #fff;
 }

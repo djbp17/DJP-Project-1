@@ -1,0 +1,17 @@
+A powerful solution to grow your startup. Fast!
+
+Organize, collaborate, and track progress seamlessly with our
+            one-stop-shop startup growth tool
+
+See how it works and get started in less than 2 minutes
+
+Get Started
+
+Book a Demo
+
+primary-color: #4891ff;
+ight-color: #f4f4f6;
+dark-color: #111;
+black-color: #000;
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />

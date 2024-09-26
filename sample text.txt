@@ -52,6 +52,29 @@ Organize, delegate and keep track
                   of tasks
 Get Started
 
+card-pricing 2
+-Heading
+Premium
+-Subheading
+Keep track of your contacts, gain valuable insights, analyze
+                live data and performance metrics.
+$49 /month
+-Body
+Everything from the free plan plus:
+Data-driven decisions
+Data visualization
+Schedule appointments
+Get Started
+
+`Footer
+All prices are in USD and charged per month with applicable taxes
+          added at checkout.
+
+
+
+
+
+
 `Colors
 primary-color: #4891ff;
 ight-color: #f4f4f6;

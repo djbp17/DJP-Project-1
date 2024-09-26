@@ -1,17 +1,62 @@
+`Hero
 A powerful solution to grow your startup. Fast!
 
 Organize, collaborate, and track progress seamlessly with our
             one-stop-shop startup growth tool
-
-See how it works and get started in less than 2 minutes
-
 Get Started
-
 Book a Demo
 
+`Video
+See how it works and get started in less than 2 minutes
+Get Started
+
+`Testimonials
+Don't just take our word for it, see the success stories from businesses just like yours.
+
+  “Our business has seen a significant increase in productivity
+              since we started using the Growth app.”
+Katherine Smith
+Capodopera
+
+  “As a small business owner, it's important to have a tool that can
+              help me keep track of everything. The Growth app has been a
+              lifesaver for me, allowing me to manage my contacts, schedule
+              appointments, and track progress all in one place..”
+Johnathan Lee
+Red Bolt
+
+ “The dashboards and reporting feature has provided valuable
+              insights into our performance and helped us make data-driven
+              decisions. It's a game changer for us.”
+David Wilson
+Slide
+
+
+`Pricing
+Pricing
+Start free and scale while you grow. No hidden fees. Unlimited users
+          for free.
+
+card-pricing 1
+-Heading
+Simple
+-Subheading
+Keep track of your contacts, gain valuable insights, analyse
+                live data and performance metrics.
+Free   *No credit card needed
+-Body
+Real-Time Monitoring
+Track key performance indicators
+Schedule appointments
+Organize, delegate and keep track
+                  of tasks
+Get Started
+
+`Colors
 primary-color: #4891ff;
 ight-color: #f4f4f6;
 dark-color: #111;
 black-color: #000;
 
+CDN font awesome
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />

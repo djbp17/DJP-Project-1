@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DJP Project 1</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="shortcut icon"
+      href="img/hard-hat-50by50.ico"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -10,23 +17,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style2.css" />
     <link
-      rel="shortcut icon"
-      href="img/hard-hat-50by50.ico"
-      type="image/x-icon"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
     />
-    <title>DJP Project 1</title>
   </head>
   <body>
-    <nav class="navbar">
+    <!-- Navbar -->
+    <section class="navbar">
       <div class="container">
         <div class="logo">
-          <a href="index2html">
+          <a href="index2.html">
             <img src="img/hard-hat-50by50.png" alt="Logo" />
           </a>
         </div>
-
         <div class="main-menu">
           <ul>
             <li>
@@ -39,26 +43,28 @@
               <a href="#">Contact</a>
             </li>
             <li>
-              <a class="btn" href="#"> <i class="fas fa-user"></i>Login </a>
+              <a class="btn btn-light" href="#">
+                <i class="fas fa-user"></i>Login
+              </a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </section>
 
     <!-- Hero -->
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="hero-header text-xxl">
+          <h1 class="hero-heading text-xxl">
             A powerful solution to grow your startup. Fast!
           </h1>
           <p class="hero-text">
             Organize, collaborate, and track progress seamlessly with our
             one-stop-shop startup growth tool
           </p>
-          <div class="hero-buttons">
-            <a class="btn btn-primary" href="#"> Get Started </a>
+          <div class="hero-button">
+            <a class="btn btn-primary" href="#">Get Started</a>
             <a class="btn" href="#">
               <i class="fas fa-laptop"></i> Book a Demo
             </a>
@@ -67,7 +73,6 @@
       </div>
     </section>
 
-    <!-- Video -->
     <section class="video bg-black">
       <div class="container-sm">
         <h2 class="video-heading text-xl text-center">
@@ -75,7 +80,11 @@
         </h2>
         <div class="video-content">
           <a href="#">
-            <img src="img/video-preview.png" class="video-preview" alt="Logo" />
+            <img
+              src="img/video-preview.png"
+              class="video-preview"
+              alt="Video"
+            />
           </a>
           <a class="btn btn-primary" href="#">Get Started</a>
         </div>
@@ -85,7 +94,7 @@
     <!-- Testimonials -->
     <section class="testimonials bg-dark">
       <div class="container">
-        <h3 class="testimonials-header text-xl">
+        <h3 class="testimonials-heading text-xl">
           Don't just take our word for it, see the success stories from
           businesses just like yours.
         </h3>
@@ -124,7 +133,7 @@
     <!-- Pricing -->
     <section class="pricing">
       <div class="container-sm">
-        <h2 class="pricing-heading text-xl text-center">Pricing</h2>
+        <h3 class="pricing-heading text-xl text-center">Pricing</h3>
         <p class="pricing-subheading text-md text-center">
           Start free and scale while you grow. No hidden fees. Unlimited users
           for free.
@@ -133,17 +142,16 @@
           <!-- Pricing Card 1 -->
           <div class="card bg-light">
             <div class="pricing-card-header">
-              <h4 class="pricing-card-heading text-xxl">Simple</h4>
-              <p class="pricing-card-subheading">
-                Start free and scale while you grow. No hidden fees. Unlimited
-                users for free.
+              <h4 class="pricing-card-heading text-xl">Simple</h4>
+              <p class="pricing-card-subheading text-md">
+                Keep track of your contacts, gain valuable insights, analyse
+                live data and performance metrics.
               </p>
               <p class="pricing-card-price">
-                <span class="text-xxl">FREE</span>
-                *No credit card needed
+                <span class="text-xl">Free </span>*No credit card needed
               </p>
             </div>
-            <div class="card-pricing-body">
+            <div class="pricing-card-body">
               <ul>
                 <li><i class="fas fa-check"></i>Real-Time Monitoring</li>
                 <li>
@@ -155,33 +163,29 @@
                   of tasks
                 </li>
               </ul>
-              <a class="btn btn-primary" href="#">Get Started</a>
+              <a href="#" class="btn btn-primary btn-block">Get Started</a>
             </div>
           </div>
           <!-- Pricing Card 2 -->
-          <div class="card bg-black">
+          <div class="card bg-dark">
             <div class="pricing-card-header">
-              <h4 class="pricing-heading text-xxl">Premium</h4>
-              <p class="pricing-card-subheader">
-                Keep track of your contacts, gain valuable insights, analyze
+              <h4 class="pricing-card-heading text-xl">Premium</h4>
+              <p class="pricing-card-subheading text-md">
+                Keep track of your contacts, gain valuable insights, analyse
                 live data and performance metrics.
               </p>
               <p class="pricing-card-price">
-                <span class="text-xl">$49</span>
-                /month
+                <span class="text-xl">$49 </span>/month
               </p>
             </div>
-            <div class="card-pricing-body">
+            <div class="pricing-card-body">
               <ul>
-                <li>
-                  <i class="fas fa-check"></i>Everything from the free plan
-                  plus:
-                </li>
+                <li>Everything from the free plan plus:</li>
                 <li><i class="fas fa-check"></i>Data-driven decisions</li>
                 <li><i class="fas fa-check"></i>Data visualization</li>
-                <li><i class="fas fa-check"></i>Schedule appointments</li>
+                <li><i class="fas fa-check"></i>Schedule appointment</li>
               </ul>
-              <a class="btn btn-primary" href="#">Get Started</a>
+              <a href="#" class="btn btn-primary btn-block">Get Started</a>
             </div>
           </div>
         </div>

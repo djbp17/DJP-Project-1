@@ -72,6 +72,65 @@ All prices are in USD and charged per month with applicable taxes
 
 
 
+`FAQ
+Heading
+Frequently Asked Questions
+UL
+All
+Getting Started
+Pricing
+
+FAQ Group
+Header
+How does the contact management feature help me keep track of
+                clients and partners?
+
+Answer
+  Keep track of your contacts, gain valuable insights, analyse
+                live data and performance metrics.
+
+
+Header
+  Can I customize the dashboards and reporting feature to display
+                the metrics that are most important to my business?
+Answer
+   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
+                culpa enim blanditiis rem ipsum aliquam, unde iste fugit
+                praesentium eos?
+
+Header
+How does the contact management feature help me keep track of
+                clients and partners?
+
+Answer
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Incidunt, a! Quaerat, voluptatum. Animi molestias ex quasi
+                explicabo minima perferendis commodi.
+Header
+ Can I collaborate with my team in real-time using all tools?
+
+Answer
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
+                aliquid. Repellat animi quam vitae.
+
+Header
+Is the app available on all devices?
+
+Answer
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
+                aliquid. Repellat animi quam vitae.
+
+Header
+  How does the app help me stay compliant when working with
+                freelancers and contractors?
+
+Answer
+   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
+                aliquid. Repellat animi quam vitae.
+
 
 
 
@@ -83,3 +142,9 @@ black-color: #000;
 
 CDN font awesome
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+Font Poppins
+<link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />

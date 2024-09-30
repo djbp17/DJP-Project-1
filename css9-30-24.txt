@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --primary-color: #4891ff;
   --light-color: #f4f4f6;
@@ -12,15 +13,10 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
   background: #fff;
   overflow-x: hidden;
-}
-
-/* Navbar */
-.navbar {
-  padding: 20px;
-  background: #fff;
 }
 
 ul {
@@ -36,6 +32,12 @@ image {
   max-width: 100%;
 }
 
+/* Navbar */
+.navbar {
+  padding: 20px;
+  background: #fff;
+}
+
 .navbar .container {
   display: flex;
   justify-content: space-between;
@@ -48,7 +50,6 @@ image {
 
 .navbar ul li a {
   padding: 10px 20px;
-  text-decoration: none;
   display: block;
   font-weight: 600;
   transition: 0.5s;
@@ -68,7 +69,7 @@ image {
 
 /* Hero */
 .hero {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .hero .container {
@@ -82,7 +83,7 @@ image {
   width: 70%;
 }
 
-.hero .hero-text {
+.hero-text {
   width: 70%;
   margin-bottom: 20px;
 }
@@ -98,68 +99,70 @@ image {
   align-items: center;
 }
 
-.video .video-preview {
+.video-preview {
   margin-bottom: 20px;
 }
 
 /* Testimonials */
 .testimonials {
-  padding: 10px 0 40px;
+  padding: 40px 0 30px;
 }
+.testimonials .testimonials-heading {
+  width: 700px;
+  margin-bottom: 40px;
+}
+
 .testimonials .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-.testimonials .testimonials-grid .card p:nth-child(2) {
-  margin-top: 30px;
-  font-weight: 600;
-}
-
-.testimonials .testimonials-heading {
-  width: 700px;
-  margin-bottom: 30px;
+.testimonials .card p:nth-child(2) {
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 /* Pricing */
 .pricing {
-  padding: 20px;
+  padding: 10px 0 30px;
 }
 
 .pricing .pricing-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-}
-
-.pricing .pricing-card-header .pricing-card-subheading {
-  margin-bottom: 30px;
-}
-
-.pricing .pricing-card-price {
-  margin-bottom: 30px;
   padding: 20px 0;
-}
-
-.pricing .pricing-card-body ul {
-  margin: 20px 0;
-}
-
-.pricing .pricing-card-body ul li {
-  padding-bottom: 20px;
-}
-
-.pricing .pricing-card-body ul li i {
-  margin-right: 10px;
 }
 
 .pricing .pricing-subheading {
   margin-bottom: 50px;
 }
 
+.pricing .pricing-card-subheading {
+  margin-bottom: 30px;
+}
+
+.pricing .pricing-card-price {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.pricing ul {
+  margin: 30px 0;
+}
+
+.pricing .pricing-card-body ul li {
+  margin-bottom: 20px;
+}
+
+.pricing .pricing-card-body ul li i {
+  margin-right: 10px;
+}
+
 .pricing .pricing-footer {
-  margin-top: 40px;
+  margin: 30px 0;
 }
 
 /* Utilities */
@@ -188,9 +191,9 @@ image {
 .btn {
   background: var(--light-color);
   display: inline-block;
-  text-decoration: none;
   padding: 13px 20px;
-  font-weight: 600;
+  font-weight: 600px;
+  text-decoration: none;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -235,7 +238,7 @@ image {
 .text-lg {
   font-size: 1.8rem;
   line-height: 1.4;
-  font-weight: normal;
+  line-height: normal;
   margin: 30px 0 20px;
 }
 
@@ -256,7 +259,6 @@ image {
 .text-center {
   text-align: center;
 }
-
 /* Backgrounds */
 .bg-primary {
   background: var(--primary-color);

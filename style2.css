@@ -162,6 +162,44 @@ image {
   margin-top: 40px;
 }
 
+/* FAQ */
+.faq .faq-heading {
+  font-weight: 600;
+}
+
+.faq ul.faq-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq .faq-group .faq-group-header {
+  padding: 20px 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.faq .faq-group .faq-group-header h4 {
+  font-weight: 600;
+  width: 95%;
+}
+
+.faq .faq-group .faq-group-header .faq-icon {
+  position: absolute;
+  top: 35px;
+  right: 0;
+}
+
+.faq ul li a {
+  padding: 10px 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.faq ul li:active {
+  background: var(--primary-color);
+}
+
 /* Utilities */
 .container {
   max-width: 1100px;

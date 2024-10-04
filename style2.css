@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --primary-color: #4891ff;
   --light-color: #f4f4f6;
@@ -12,6 +13,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
   background: #fff;
   overflow-x: hidden;
@@ -23,6 +25,12 @@ body {
   background: #fff;
 }
 
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 ul {
   list-style: none;
 }
@@ -32,14 +40,8 @@ a {
   color: #333;
 }
 
-image {
+img {
   max-width: 100%;
-}
-
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .navbar .main-menu ul {
@@ -48,8 +50,8 @@ image {
 
 .navbar ul li a {
   padding: 10px 20px;
-  text-decoration: none;
   display: block;
+  text-decoration: none;
   font-weight: 600;
   transition: 0.5s;
 }
@@ -58,17 +60,17 @@ image {
   color: var(--primary-color);
 }
 
-.navbar ul li:last-child a {
-  margin-left: 10px;
-}
-
 .navbar ul li a i {
   margin-right: 10px;
 }
 
+.navbar ul li:last-child a {
+  margin-left: 10px;
+}
+
 /* Hero */
 .hero {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .hero .container {
@@ -98,33 +100,33 @@ image {
   align-items: center;
 }
 
-.video .video-preview {
+.video .video-content .video-preview {
   margin-bottom: 20px;
 }
 
 /* Testimonials */
-.testimonials {
-  padding: 10px 0 40px;
+.testimonial {
+  padding: 40px 0 20px;
 }
-.testimonials .testimonials-grid {
+
+.testimonial .testimonial-heading {
+  width: 700px;
+}
+
+.testimonial-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-.testimonials .testimonials-grid .card p:nth-child(2) {
-  margin-top: 30px;
+.testimonial .card p:nth-child(2) {
   font-weight: 600;
-}
-
-.testimonials .testimonials-heading {
-  width: 700px;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 /* Pricing */
 .pricing {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .pricing .pricing-grid {
@@ -133,50 +135,69 @@ image {
   gap: 30px;
 }
 
-.pricing .pricing-card-header .pricing-card-subheading {
+.pricing .pricing-card-subheading {
   margin-bottom: 30px;
 }
 
 .pricing .pricing-card-price {
   margin-bottom: 30px;
   padding: 20px 0;
+  border-bottom: solid 1px #ccc;
 }
 
 .pricing .pricing-card-body ul {
-  margin: 20px 0;
-}
-
-.pricing .pricing-card-body ul li {
-  padding-bottom: 20px;
+  margin: 30px 0;
 }
 
 .pricing .pricing-card-body ul li i {
   margin-right: 10px;
 }
 
+.pricing .pricing-card-body ul li {
+  padding-bottom: 20px;
+}
+
 .pricing .pricing-subheading {
   margin-bottom: 50px;
 }
 
-.pricing .pricing-footer {
-  margin-top: 40px;
-}
-
 /* FAQ */
-.faq .faq-heading {
-  font-weight: 600;
+.faq {
+  padding: 40px 0;
 }
 
 .faq ul.faq-menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  max-width: 400px;
+  background: var(--light-color);
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.faq ul.faq-menu li.active {
+  background: var(--primary-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.faq .faq-group {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
 }
 
 .faq .faq-group .faq-group-header {
   padding: 20px 0;
   margin-bottom: 15px;
   position: relative;
+  cursor: pointer;
 }
 
 .faq .faq-group .faq-group-header h4 {
@@ -184,20 +205,76 @@ image {
   width: 95%;
 }
 
-.faq .faq-group .faq-group-header .faq-icon {
+.faq .faq-group .faq-group-header i {
   position: absolute;
-  top: 35px;
   right: 0;
+  top: 35px;
+  font-size: 1.3rem;
+  cursor: pointer;
 }
 
-.faq ul li a {
-  padding: 10px 20px;
-  font-weight: 600;
-  text-decoration: none;
+.faq .faq-group .faq-group-body {
+  display: none;
 }
 
-.faq ul li:active {
-  background: var(--primary-color);
+.faq .faq-group .faq-group-body.open {
+  display: block;
+}
+
+/* Footer */
+.footer {
+  padding: 40px 0;
+}
+
+.footer .footer-grid div:first-child a {
+  display: flex;
+  text-align: center;
+}
+
+.footer .footer-grid div:first-child a p {
+  margin-top: 15px;
+  padding: 0 5px;
+}
+
+.footer .footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer-grid div:last-child {
+  margin-top: -80px;
+}
+
+.footer .card {
+  margin: 20px 30px 30px 0;
+}
+
+.footer input[type='email'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul li {
+  line-height: 2.5;
+}
+
+.footer a {
+  color: #ccc;
+}
+
+.footer i {
+  font-size: 1.5rem;
+  margin-right: 10px;
 }
 
 /* Utilities */
@@ -213,7 +290,6 @@ image {
   padding: 0 15px;
 }
 
-/* Card */
 .card {
   background: #fff;
   color: #000;
@@ -226,7 +302,6 @@ image {
 .btn {
   background: var(--light-color);
   display: inline-block;
-  text-decoration: none;
   padding: 13px 20px;
   font-weight: 600;
   border: none;

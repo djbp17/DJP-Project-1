@@ -25,6 +25,12 @@ body {
   background: #fff;
 }
 
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 ul {
   list-style: none;
 }
@@ -38,12 +44,6 @@ img {
   max-width: 100%;
 }
 
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .navbar .main-menu ul {
   display: flex;
 }
@@ -51,8 +51,8 @@ img {
 .navbar ul li a {
   padding: 10px 20px;
   display: block;
-  font-weight: 600;
   text-decoration: none;
+  font-weight: 600;
   transition: 0.5s;
 }
 
@@ -70,7 +70,7 @@ img {
 
 /* Hero */
 .hero {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .hero .container {
@@ -100,13 +100,17 @@ img {
   align-items: center;
 }
 
-.video .video-preview {
+.video .video-content .video-preview {
   margin-bottom: 20px;
 }
 
 /* Testimonials */
 .testimonial {
-  padding: 40px 0 30px;
+  padding: 40px 0 20px;
+}
+
+.testimonial .testimonial-heading {
+  width: 700px;
 }
 
 .testimonial-grid {
@@ -120,24 +124,15 @@ img {
   margin-top: 30px;
 }
 
-.testimonial .testimonial-heading {
-  width: 700px;
-  margin-bottom: 30px;
-}
-
 /* Pricing */
 .pricing {
   padding: 20px 0;
 }
 
-.pricing-grid {
+.pricing .pricing-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-}
-
-.pricing .pricing-subheading {
-  margin-bottom: 50px;
 }
 
 .pricing .pricing-card-subheading {
@@ -147,6 +142,7 @@ img {
 .pricing .pricing-card-price {
   margin-bottom: 30px;
   padding: 20px 0;
+  border-bottom: solid 1px #ccc;
 }
 
 .pricing .pricing-card-body ul {
@@ -161,70 +157,83 @@ img {
   padding-bottom: 20px;
 }
 
+.pricing .pricing-subheading {
+  margin-bottom: 50px;
+}
+
 /* FAQ */
 .faq {
   padding: 40px 0;
 }
 
 .faq ul.faq-menu {
-  max-width: 400px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 600;
-  border: none;
-  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 400px;
   background: var(--light-color);
   padding: 10px 20px;
-}
-
-.faq ul.faq-menu li {
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-align: center;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 .faq ul.faq-menu li.active {
   background: var(--primary-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
   color: #fff;
 }
 
 .faq .faq-group {
+  padding: 20px 0;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
 }
 
 .faq .faq-group .faq-group-header {
   padding: 20px 0;
   margin-bottom: 15px;
   position: relative;
+  cursor: pointer;
 }
 
 .faq .faq-group .faq-group-header h4 {
-  width: 95%;
   font-weight: 600;
+  width: 95%;
 }
 
 .faq .faq-group .faq-group-header i {
   position: absolute;
-  top: 35px;
   right: 0;
+  top: 35px;
   font-size: 1.3rem;
   cursor: pointer;
 }
 
-.faq .faq-group-body {
+.faq .faq-group .faq-group-body {
   display: none;
 }
 
-.faq .faq-group-body.open {
+.faq .faq-group .faq-group-body.open {
   display: block;
 }
 
 /* Footer */
 .footer {
-  padding: 40px;
+  padding: 40px 0;
+}
+
+.footer .footer-grid div:first-child a {
+  display: flex;
+  text-align: center;
+}
+
+.footer .footer-grid div:first-child a p {
+  margin-top: 15px;
+  padding: 0 5px;
 }
 
 .footer .footer-grid {
@@ -239,24 +248,16 @@ img {
   margin-top: -80px;
 }
 
-.footer .footer-grid div:first-child a {
-  display: flex;
-  align-items: center;
-}
-.footer .footer-grid div:first-child a p {
-  margin-left: 10px;
+.footer .card {
+  margin: 20px 30px 30px 0;
 }
 
 .footer input[type='email'] {
   width: 100%;
   padding: 10px;
-  margin: 20px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-}
-
-.footer .card {
-  margin: 20px 30px 30px 0;
+  margin: 20px 0;
 }
 
 .footer h4 {
@@ -267,13 +268,13 @@ img {
   line-height: 2.5;
 }
 
+.footer a {
+  color: #ccc;
+}
+
 .footer i {
   font-size: 1.5rem;
   margin-right: 10px;
-}
-
-.footer a {
-  color: #ccc;
 }
 
 /* Utilities */
@@ -289,7 +290,6 @@ img {
   padding: 0 15px;
 }
 
-/* Card */
 .card {
   background: #fff;
   color: #000;
@@ -345,7 +345,7 @@ img {
   margin: 40px 0 20px;
 }
 
-.text-l {
+.text-lg {
   font-size: 1.8rem;
   line-height: 1.4;
   font-weight: normal;

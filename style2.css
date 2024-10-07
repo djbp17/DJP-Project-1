@@ -147,6 +147,8 @@ img {
 .pricing .pricing-card-price {
   margin-bottom: 30px;
   padding: 20px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
 }
 
 .pricing .pricing-card-body ul {
@@ -455,7 +457,68 @@ img {
   .navbar .hamburger-button {
     display: block;
   }
+
+  .hero .container {
+    background: url('img/hero-bg-mobile.png') no-repeat;
+    background-size: 350px;
+    background-position: bottom;
+    height: 770px;
+  }
+
+  .hero .hero-content,
+  .hero .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero .hero-buttons .btn {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .footer .card {
+    margin-right: 0;
+  }
+
+  .footer .footer-grid > div {
+    text-align: center;
+  }
+
+  /* Text */
+  .text-xl {
+    font-size: 1.9rem;
+  }
+
+  .text-lg {
+    font-size: 1.5rem;
+  }
+
+  .text-md {
+    font-size: 1.1rem;
+  }
+
+  .testimonial .testimonial-heading {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .testimonial .testimonial-grid,
+  .pricing .pricing-grid,
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .footer-grid div:last-child {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 500px) {
+  .text-xxl {
+    font-size: 2rem;
+  }
+  .footer .footer-grid div:last-child {
+    margin-top: 0;
+  }
 }
